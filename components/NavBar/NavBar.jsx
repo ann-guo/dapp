@@ -1,11 +1,11 @@
 import React, {useState, useContext} from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
-import {AiFillLock, AiFillUnock} from "react-icons/ai";
+//import {AiFillLock, AiFillUnock} from "react-icons/ai";
 
 import {VotingContext} from '../../context/Voter'
 import Style from './NavBar.module.css';
-import loading from '../../assets/loading.gif';
+//import loading from '../../assets/loading.gif';
 
 
 const NavBar = () => {
@@ -34,7 +34,7 @@ const NavBar = () => {
       <div className={Style.navbar_box}> 
         <div className={Style.title}>
           <Link to={{ pathname: '/' }}>
-            <Image src={loading} alt="logo" width={80} height={80}/>
+            {/*<Image src={loading} alt="logo" width={80} height={80}/>*/}
           </Link>
         </div>
 
@@ -47,9 +47,9 @@ const NavBar = () => {
                 </button>
                 {currentAccount && (
                   <span>{openNav ? (
-                    <AiFillUnock onClick={()=> openNavigation()}/>
+                    {/*<AiFillUnLock onClick={()=> openNavigation()}/>*/}
                    ) : (
-                    <AiFillLock onClick={()=> openNavigation()}/>
+                    {/*<AiFillLock onClick={()=> openNavigation()}/>*/}
                    )} </span>
                 )}
               </div>
